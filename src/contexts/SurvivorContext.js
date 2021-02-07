@@ -39,8 +39,22 @@ const SurvivorContextProvider = (props) => {
         }
     }
 
+    const createSurvivor = (survivor) => {
+        const survivorData = {
+                name: survivor.name,
+                job: survivor.job,
+                infected: survivor.infected,
+                photo: survivor.photo,
+                id: survivors.length + 1
+        }
+
+        console.log(survivorData)
+
+        setSurvivors([...survivors, survivorData])
+    }
+
     return (
-        <SurvivorContext.Provider value={{ survivors, getSurvivors, infectSurvivor, desinfectSurvivor }}>
+        <SurvivorContext.Provider value={{ survivors, getSurvivors, infectSurvivor, desinfectSurvivor, createSurvivor }}>
             { props.children }
         </SurvivorContext.Provider>
     );
