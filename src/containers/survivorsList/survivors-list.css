@@ -28,9 +28,9 @@
     }
 }
 
-@media screen and (max-height: 900px) {
+@media screen and (max-height: 800px) {
     .survivors-list-container {
-        max-height: 65vh;
+        max-height: 400px;
     }
 }
 
