@@ -1,8 +1,9 @@
 import React from 'react';
+import './survivor-card.css';
 
 const SurvivorCard = ({ survivor }) => {
     return (
-        <div>
+        <div className="survivor-card-container">
             {/* <div>
                 <img
                     src={survivor.photo}
