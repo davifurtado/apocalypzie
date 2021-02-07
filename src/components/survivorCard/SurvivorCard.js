@@ -1,23 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './survivor-card.css';
+import avatar from '../../assets/survivor_avatar_placeholder.jpg';
 
 const SurvivorCard = ({ survivor }) => {
+    const [imageLoadError, setImageLoadError] = useState(true)
     return (
         <div className="survivor-card-container">
-            {/* <div>
+            <div>
                 <img
                     src={survivor.photo}
                     alt="survivor"
                     onError={e => {
                         if (imageLoadError) {
                             setImageLoadError(false)
-                            e.target.src = 'https://images.pexels.com/photos/3697676/pexels-photo-3697676.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500';
+                            e.target.src = avatar;
                         }
                     }}
-                    width="100%"
-                    height="100%"
+                    width="250px"
+                    height="200px"
                 />
-            </div> */}
+            </div>
             <div>
                 <div >Name: {survivor?.name}</div>
                 <div >Job: {survivor?.job}</div>
