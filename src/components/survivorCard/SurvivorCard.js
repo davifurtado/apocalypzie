@@ -8,8 +8,9 @@ import { SurvivorContext } from '../../contexts/SurvivorContext';
 const SurvivorCard = ({ survivor }) => {
     const { infectSurvivor } = useContext(SurvivorContext)
     const [imageLoadError, setImageLoadError] = useState(true)
+    const backgroundColor = survivor?.infected ? "#ffadad" : '#adffb7'
     return (
-        <div className="survivor-card-container">
+        <div className="survivor-card-container" style={{ backgroundColor }}>
             <div>
                 <img
                     src={survivor.photo}
@@ -27,7 +28,7 @@ const SurvivorCard = ({ survivor }) => {
             <div>
                 <div >Name: {survivor?.name}</div>
                 <div >Job: {survivor?.job}</div>
-                <div >Infected: {survivor?.infected ? 'Yes, better run' : "Nah, it's fine"}</div>
+                <div >Infected: {survivor?.infected ? 'RUNN!!!!' : "Nah, it's fine"}</div>
 
                 {!survivor?.infected &&
                     <Button
