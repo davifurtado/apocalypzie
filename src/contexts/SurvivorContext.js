@@ -48,8 +48,6 @@ const SurvivorContextProvider = (props) => {
                 id: survivors.length + 1
         }
 
-        console.log(survivorData)
-
         setSurvivors([...survivors, survivorData])
     }
 

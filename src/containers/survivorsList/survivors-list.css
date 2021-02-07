@@ -5,19 +5,29 @@
     overflow: auto;
     border: 1px solid;
     background-color: lightgrey;
-    max-height: 70vh;
+    max-height: 75vh;
     margin-bottom: 10px;
-    padding: 10px
+    padding: 5px 10px
 }
 
 .survivors-list-filter {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 5px 10px;
 }
 
 @media screen and (max-height: 605px) {
     .survivors-list-container {
         height: 360px;
     }
+}
+
+@media screen and (max-height: 700px) {
+    .survivors-list-container {
+        max-height: 60vh;
+    }
+}
+
+.survivor-list-main {
+    padding: 0px 10px
 }

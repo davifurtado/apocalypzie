@@ -12,7 +12,7 @@ const SurvivorList = () => {
 
     const [showModal, setShowModal] = useState(false)
     return (
-        <div>
+        <div className="survivor-list-main">
             <Modal show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header closeButton>
                     <Modal.Title>New survivor...</Modal.Title>
