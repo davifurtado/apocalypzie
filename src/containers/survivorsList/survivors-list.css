@@ -18,13 +18,19 @@
 
 @media screen and (max-height: 605px) {
     .survivors-list-container {
-        height: 360px;
+        height: 300px;
     }
 }
 
 @media screen and (max-height: 700px) {
     .survivors-list-container {
-        max-height: 60vh;
+        max-height: 350px;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .survivors-list-container {
+        max-height: 65vh;
     }
 }
 

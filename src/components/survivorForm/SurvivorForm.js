@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { SurvivorContext } from '../../contexts/SurvivorContext';
 import Button from 'react-bootstrap/Button';
+import './survivor-form.css';
 
 const SurvivorForm = (props) => {
     const { createSurvivor } = useContext(SurvivorContext)
@@ -19,15 +20,15 @@ const SurvivorForm = (props) => {
     return (
         <form onSubmit={handleOnSubmitCreate} style={{ overFlow: 'auto' }}>
             <div>
-                <label>Name:</label>
+                <label className="survivor-form-label">Name:</label>
                 <input required minLength={3} maxLength={20} name="name" />
             </div>
             <div>
-                <label>Job: </label>
+                <label className="survivor-form-label">Job: </label>
                 <input required minLength={3} maxLength={20} name="job" />
             </div>
             <div>
-                <label>Photo URL: </label>
+                <label className="survivor-form-label">Photo URL: </label>
                 <input maxLength={1024} name="photo" />
             </div>
             <div>
