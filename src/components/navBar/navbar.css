@@ -1,0 +1,11 @@
+.navbar-container {
+    margin: auto;
+    width: 455px;
+    padding: 5px
+}
+
+@media screen and (max-width: 465px) {
+    .navbar-container {
+        width: 90%
+    }
+}
