@@ -33,5 +33,5 @@ export default [
         infected: false,
         photo: 'https://s2.thcdn.com/productimg/300/300/12466882-2964769706037707.jpg',
         id: '5'
-    },
+    }
 ]

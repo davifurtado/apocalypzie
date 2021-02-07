@@ -19,7 +19,7 @@ const SurvivorList = () => {
                 {
                     survivors.filter(e => filter ? e.name?.toUpperCase().includes(filter.toUpperCase()) : true).map((obj) => {
                         return (
-                            <SurvivorCard survivor={obj} />
+                            <SurvivorCard survivor={obj} key={obj.id} />
                         )
                     })
                 }

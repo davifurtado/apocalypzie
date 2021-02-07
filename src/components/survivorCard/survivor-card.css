@@ -1,6 +1,19 @@
 .survivor-card-container {
     border: 1px solid;
+    border-radius: 10px;
     min-width: 250px;
     min-height: 250px;
-    padding: 2px
+    padding: 10px;
+    margin: 10px;
+    transition: transform .3s;
+}
+
+.survivor-card-container:hover {
+    -ms-transform: scale(1.048); /* IE 9 */
+    -webkit-transform: scale(1.048); /* Safari 3-8 */
+    transform: scale(1.048);
+  }
+
+.survivor-card-button-icon {
+    margin: 0px 0px 3px 5px
 }
