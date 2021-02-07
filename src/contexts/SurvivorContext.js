@@ -15,8 +15,20 @@ const SurvivorContextProvider = (props) => {
         setSurvivors(survivorsList)
     }
 
+    const infectSurvivor = (id) => {
+        if (id && id > 0) {
+            const data = survivors.map((o) => {
+                if (o.id === id) {
+                    o.infected = true
+                }
+                return o
+            })
+            setSurvivors(data)
+        }
+    }
+
     return (
-        <SurvivorContext.Provider value={{ survivors, getSurvivors }}>
+        <SurvivorContext.Provider value={{ survivors, getSurvivors, infectSurvivor }}>
             { props.children }
         </SurvivorContext.Provider>
     );
